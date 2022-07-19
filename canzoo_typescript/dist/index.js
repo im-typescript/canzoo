@@ -48,6 +48,7 @@ var iterator = new RangeIterable_1.RangeIterable(1, 3 + 1);
 var iter = (0, yield_return_1.gen)();
 while (true) {
     var _a = iter.next((0, yield_return_1.random)(10, 1)), value = _a.value, done = _a.done;
+    console.log(done);
     if (done)
         break;
     console.log(value);
