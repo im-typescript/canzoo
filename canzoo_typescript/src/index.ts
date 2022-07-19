@@ -29,6 +29,7 @@ const iterator = new RangeIterable(1, 3 + 1);
 const iter = gen();
 while(true){
     const {value, done} = iter.next(random(10, 1))
+    console.log(done);
     if(done) break
     console.log(value);
 }
